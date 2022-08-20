@@ -16,4 +16,6 @@ while True:
     if a > 2:
         l.append(a)
     l.sort()
-    print(*l)
+    for i in l:
+        print('{}'.format(i), end=' ')
+    print()
