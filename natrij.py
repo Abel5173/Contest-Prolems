@@ -9,6 +9,7 @@ else:
         tdelta = s2 - s1
         s=str(tdelta)
         l=list(s.split())
+        
         a,b,c = (l[-1].split(':'))
         a=int(a)
         b=int(b)
