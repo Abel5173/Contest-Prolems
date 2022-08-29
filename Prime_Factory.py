@@ -1,9 +1,9 @@
 import math
 
-while True:
-    a = int(input())
-    if a == -1:
-        break
+a = int(input())
+if a == 1:
+    print('no')
+else:
     l=[]
     while a % 2 == 0:
         l.append(2)
@@ -12,10 +12,15 @@ while True:
         while (a % i == 0):
             l.append(i)
             a = a // i
-    
+
     if a > 2:
         l.append(a)
     l.sort()
-    for i in l:
-        print('{}'.format(i), end=' ')
-    print()
+    l = set(l)
+    if len(l) == 1:
+        print('yes')
+    else:
+        print('no')
+    # for i in l:
+    #     print('{}'.format(i), end=' ')
+    # print()
