@@ -8,4 +8,4 @@ try:
         else:
             print(2 * (n-1))
 except:
-    pass
+    pass    
